@@ -1,0 +1,66 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: url('http://codingstella.com/wp-content/uploads/2024/01/download-5.jpeg') no-repeat center center;
+    background-size: cover;
+}
+
+/* Font face for Playwright Australia NSW */
+@font-face {
+    font-family: 'Playwright Australia NSW';
+    src: url('/fonts/playwright-australia-nsw.woff2') format('woff2'),
+         url('/fonts/playwright-australia-nsw.woff') format('woff'),
+         url('/fonts/playwright-australia-nsw.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Container styles */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+h1 {
+    text-align: center;
+    color: #333;
+    font-family: 'Playwright Australia NSW', sans-serif;
+    font-size: 2em; /* Example size adjustment */
+    margin-bottom: 20px; /* Example margin adjustment */
+}
+
+/* List styles */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+li:hover {
+    background-color: #f0f0f0; /* Light grey background on hover */
+    transform: translateY(-3px); /* Move the item up slightly on hover */
+}
